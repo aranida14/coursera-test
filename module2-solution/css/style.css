@@ -8,6 +8,8 @@
 body {
   font-family: Comic Sans MS, sans-serif;
   font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 h1 {
@@ -15,6 +17,9 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   font-size: 175%;
+}
+.row {
+  width: 100%;
 }
 
 article > div {
@@ -29,7 +34,8 @@ article > div {
   position: absolute;
   top: -1px;
   right: -1px;
-  width: 35%;
+  padding-left: 25px;
+  padding-right: 25px;
   text-align: center;
   font-size: 125%;
   overflow: 
@@ -48,9 +54,6 @@ article > div {
   background-color: #ffff80;
 }
 
-.row {
-  width: 100%;
-}
 
 /********** Desktop view **********/
 @media (min-width: 992px) {
@@ -75,6 +78,7 @@ article > div {
 /********** Mobile view **********/
 @media (max-width: 767px) {
   .col-1, .col-2, .col-3 {
+    float: left;
     width: 100%;
     }
   }  
